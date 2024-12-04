@@ -1,50 +1,57 @@
-CAR SALES ANALYSIS
+CAR SALES ANALYSIS: TRENDS AND INSIGHTS
 
-This project focuses on analyzing a bike sales dataset to uncover key trends in sales volume, pricing, and brand performance. Through Exploratory Data Analysis (EDA), it offers valuable insights to help manufacturers and dealerships optimize their strategies, enhance customer appeal, and achieve growth in the dynamic bike industry.
+OVERVIEW
 
-OBJECTIVE
+This project explores a comprehensive dataset of car sales, focusing on identifying key patterns in sales performance, pricing, and manufacturer trends. The objective is to provide actionable insights to help car manufacturers and dealerships optimize their strategies and offerings based on data-driven evidence.
 
-1. Analyze sales volumes to identify top-performing manufacturers.  
-2. Understand pricing trends and their correlation with attributes like horsepower and fuel efficiency.  
-3. Explore relationships between variables such as price, resale value, and engine size.
+KEY OBJECTIVES
+1. Analyze sales volumes and manufacturer performance.
+2. Study price distributions and their relationship with attributes such as horsepower and fuel efficiency.
+3. Investigate correlations between various car attributes to uncover trends.
 
-DATASET
+Data Summary- 
+Source: Kaggle.
+- Scope: 157 records, 16 attributes including sales volume, price, horsepower, fuel efficiency, and resale values.
+- Key Columns:
+  - `Sales_in_thousands`: Sales volume of cars.
+  - `Price_in_thousands`: Price of each car.
+  - `Horsepower`: Power rating of the vehicle.
+  - `Fuel_efficiency`: Efficiency in miles per gallon.
+  - `Year resale value`: Projected resale value after one year.
+  - 
+METHODOLOGY AND APPROACH
+1. Data Cleaning:
+   - Addressed missing values by replacing averages for certain columns.
+   - Removed null entries and standardized column names.
+2. Analysis Techniques:
+   - Grouped data by manufacturer to compare average sales, pricing, and efficiency metrics.
+   - Visualized trends through bar charts, line plots, and correlation heatmaps.
+   - Computed descriptive statistics to highlight data distributions.
+3. Assumptions:
+   - Dataset is representative of car sales trends.
+   - Attributes like price and horsepower significantly influence customer preferences.
 
-Source: Kaggle Car_sales.csv (157 rows, 16 columns).  
-Key Attributes:  
-1. Sales Volume (`Sales_in_thousands`)  
-2. Price (`Price_in_thousands`)  
-3. Horsepower (`Horsepower`)  
-4. Fuel Efficiency (`Fuel_efficiency`)  
-5. Resale Value (`Year resale value`)
+KEY FINDINGS
+1. Sales Insights:
+   - Certain manufacturers consistently lead in sales volumes, attributed to popular models or strong branding.
+   - Pricing and horsepower significantly affect sales performance.
 
+2. Correlation Analysis:
+   - A strong positive correlation between `Price_in_thousands` and `Horsepower` indicates higher-priced cars tend to have more powerful engines.
+   - Moderate relationships were observed between other attributes, such as `Curb_weight` and `Fuel_capacity`.
 
-METHODS
-
-Data Preprocessing:  
-1. Handled missing values by imputing averages.  
-2. Cleaned column names and removed duplicates.
-
-EDA Techniques:  
-1. Grouped data by manufacturers to analyze trends.  
-2. Created visualizations like bar charts and heatmaps to understand relationships.  
-3. Performed descriptive statistics to summarize numerical columns.
-
-KEY INSIGHTS
-1. Top Performers: Certain manufacturers dominate sales, while others could improve with better pricing or efficiency strategies.  
-2. Price Trends: Strong correlation between price and horsepower; higher-powered cars are generally more expensive.  
-3. Fuel Efficiency: Identified the top 3 most fuel-efficient cars with engines above 2.5 liters.  
-4. Popular Models: Ford’s F-Series is the most popular based on sales.
+3. Manufacturer Comparisons:
+   - Fuel efficiency and pricing varied significantly across manufacturers, showcasing differences in value propositions.
 
 RECOMMENDATIONS
-
-1. Manufacturers with low sales should focus on affordability and fuel efficiency.  
-2. Marketing efforts should emphasize models balancing price, performance, and efficiency.  
-3. Future analyses could incorporate demographic and regional data for deeper insights.
+1. Manufacturers with lower sales should:
+   - Reevaluate pricing strategies.
+   - Focus on enhancing fuel efficiency to cater to Eco-conscious customers.
+2. Future analyses could include:
+   - Long-term trends over time, such as the impact of new launches on pricing and sales.
+   - Consideration of additional factors like geographic regions and customer demographics for more tailored insights.
 
 LIMITATIONS
-
-1. Small dataset size; larger datasets would enhance findings.  
-2. Lacks geographic and customer demographic data.  
-3. No predictive modeling was applied.
-4.
+- The analysis is based on a limited dataset; larger datasets could yield more comprehensive insights.
+- No predictive modeling was implemented, leaving potential for advanced analyses.
+-
